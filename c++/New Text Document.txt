@@ -1,0 +1,53 @@
+variable scope 
+scope of a variable is the region in code where the existence of variable is valid
+
+ local variables (inside the braces and can only accessed from there).
+
+ global variables (outside the function and can  accessed from anywhere).
+
+data type 
+type of data a variable can hold 
+>built-in (int, float,char, double,bool(true,flase)) 
+>user defined (struct,union,enum) 
+>derived (array, function,pointer)
+
+input output is known as streams 
+input streams
+to take in put syntax(cin>>(extration operator))  
+output streams  
+to display in put syntax(cout<<(insertion operator))
+
+header files 
+1) system 
+2) uder-defiened
+
+operators in c++
+Arithmetic Operators
+(+,-,*,/,%,++,--)
+Assignment Operators(=)
+Comparison Operators(<=,>=,==,!=,<,>)
+Logical Operators(&&,||,!)
+
+To access the value of the global variable "c," we use scope resolution operator "::" with the  variable.
+
+A decimal no. eg: 3.14 is by default a double , to specify it as float or long double a sufix is added to it 
+eg
+1> for float "f"
+2> for long double "l" .
+
+Refernce variables 
+it is known as anothere name for a variable
+
+typcasting 
+converting one data type onto othere
+
+constants 
+they are unchangeable variables , once declared cannot change throught out the programme 
+eg: const float pie = 3.14 ;
+
+manipulator is used in the formatting of output
+"endl" is used for the next line.
+"setw" is used to specify the width of the output. 
+
+Operator Precedence & Operator Associativity
+https://en.cppreference.com/w/cpp/language/operator_precedence
