@@ -185,11 +185,12 @@ int main()
 {   
    int a;
    conversion obj;
-  do{
+  
     cout<<"1. Decimal To other numbers"<<endl;
     cout<<"2. Binary To other numbers"<<endl;
     cout<<"3. Octal To other numbers"<<endl;
-     cout<<"4. exit"<<endl;
+    cout<<"4. exit"<<endl;
+    do{
     cout<<"Enter your choice:";
     cin>>a;
     
