@@ -1,23 +1,16 @@
 #include<iostream>
+#include<conio.h>
 #include<math.h>
 using namespace std;
-int main()
+class conversion
 {
-   int a,octal,hexadecimal,binary,decimal;
+   int octal,hexadecimal,binary,decimal;
    int NUM[10];
    int num=0,dec_sum=0,rem=0;
-  
-    cout<<"1. Decimal To other numbers"<<endl;
-    cout<<"2. Binary To other numbers"<<endl;
-    cout<<"3. Octal To other numbers"<<endl;
-    cout<<"Enter your choice:";
-    cin>>a;
-    
-switch(a)
-{
-
-case 1:
-binary=0;
+  public:
+  void binarytoall()
+  {
+    binary=0;
       cout<<"Enter Binary number: ";   
     cin>>binary;
     decimal=binary;      //binary to decimal//
@@ -69,10 +62,11 @@ cout<<"E";
 cout<<"F";
 }  
 cout<<endl;
-  break;
 
-case 2:
-    cout<<"Enter a Decimal number:"; 
+  }
+  void dectoall()
+  {
+     cout<<"Enter a Decimal number:"; 
     cin>>decimal;
 
     binary=decimal;
@@ -129,11 +123,9 @@ cout<<"E";
 cout<<"F";
 }  
 cout<<endl;
-
-  break;
-
-
-case 3:
+  }
+void octaltoall()
+{
 octal=0;
 dec_sum=0;
       cout<<"Enter Octal number:";
@@ -186,6 +178,39 @@ cout<<"E";
 cout<<"F";
 }  
 cout<<endl;
+}
+
+};
+int main()
+{   
+   int a;
+   conversion obj;
+  do{
+    cout<<"1. Decimal To other numbers"<<endl;
+    cout<<"2. Binary To other numbers"<<endl;
+    cout<<"3. Octal To other numbers"<<endl;
+     cout<<"4. exit"<<endl;
+    cout<<"Enter your choice:";
+    cin>>a;
+    
+switch(a)
+{
+
+case 1:
+ obj.dectoall();
+break;
+
+case 2:
+    obj.binarytoall();
+  
+  break;
+
+
+case 3:
+   obj.octaltoall();
+break;
+case 4 :
+cout<<"program ended";
 break;
 
 
@@ -193,4 +218,6 @@ default :
 cout<<"Wrong choice";
 break;
 }
+  }while(a!=4);
+getch ();
 }
