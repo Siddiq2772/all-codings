@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
-void array();
+void sort();
 void main()
 {
     int num,i;
-    array();
+   sort();
     
     
     getch();
 
 }
-void array()
+void sort()
 {
     int num[10],i,j,temp;
     printf("enter 10 numbers:");
