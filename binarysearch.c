@@ -5,9 +5,9 @@ void main()
 {
     int num,i;
    sort();
+    printf("%d",&num)
     
-    
-    getch();
+
 
 }
 void sort()
@@ -18,23 +18,30 @@ void sort()
     scanf("%d",&num[i]);
     for(i=0;i<10;i++)
     {
-        for(j=0;j<10;j++){
+        for(j=0;j=(9-i);j++){
+        
             while(num[i]>num[i+1])
-            {temp=num[i];
+            {
+            temp=num[i];
             num[i]=num[i+1];
-            num[i+1]=temp; }   
+            num[i+1]=temp; 
+            }   
         }
     }
     
-    for(i=0;i<10;i++)
-    {
-    printf("%d",num[i]);
-    }
 
 }
-void binary_search(int num)
+void binary_search(int num[10])
 {
     int i;
+  int  low=0, high=9,mid;
+  mid=(high+low)/2;
+  while (num[mid]==num)
+  {
+  
+  if()
+
+
     
     
 }
