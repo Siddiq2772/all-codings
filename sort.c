@@ -8,13 +8,13 @@ void main()
     scanf("%d",&num[i]);
     for(i=0;i<10;i++)
     {
-        for(j=0;j=(9-i);j++){
+        for(j=0;j<(9-i);j++){
         
-            while(num[i]>num[i+1])
+            while(num[j]>num[j+1])
             {
-            temp=num[i];
-            num[i]=num[i+1];
-            num[i+1]=temp; 
+            temp=num[j];
+            num[j]=num[j+1];
+            num[j+1]=temp; 
             }   
         }
     }
