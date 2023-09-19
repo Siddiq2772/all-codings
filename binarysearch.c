@@ -14,7 +14,7 @@ int main()
     for(i=0;i<n;i++)
     scanf("%d",&num[i]);
    sort();
-    printf("enter number to search: ");
+    printf("enter number to search:");
     scanf("%d",&tar);
     binary_search(tar);
    
