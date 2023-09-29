@@ -30,8 +30,8 @@ int alltodec(int dec, int base)
 };
 int main()
 {   formule a;
-    int c1,c2,num;
-    
+    int c1,c2,num=0;
+	char h;
      do{
     cout<<"\nenter type of number to be entered"<<endl;
     cout<<"menu:\n\t1.decimal\n\t2.binary\n\t3.octal\n\t4.hexadecimal\n\t5.exit"<<endl;
@@ -40,8 +40,36 @@ int main()
     cout<<"enter type of number to be converted"<<endl;
     cout<<"menu:\n\t1.decimal\n\t2.binary\n\t3.octal\n\t4.hexadecimal"<<endl;
     cin>>c2;
+	if(c1==4)
+	{
+		cout<<"enter  number: ";
+    cin>>h;
+	switch (h)
+ {
+   case 'A':
+   num=10;
+   break;
+   case 'B':
+   num=11;
+   break;
+   case 'C':
+   num=12;
+   break;
+   case 'D':
+   num=13;
+   break;
+   case 'E':
+   num=14;
+   break;
+   case 'F':
+   num=15;
+   break;
+ }
+	}
+	else{
     cout<<"enter  number: ";
     cin>>num;
+	}
     switch(c1)
     {
     case 1 :
@@ -85,7 +113,6 @@ int main()
 	a.alltodec(num, 8);
        switch(c2)
 	  {
-
 	case 1 :
 	   cout << "answer: " << a.temp<< endl;
 	    break;
@@ -100,7 +127,8 @@ int main()
 	    break;
 	    }
 	break;
-    case 4 :
+ case 4 :
+ 
 	a.alltodec(num, 16);
        switch(c2)
 	  {
