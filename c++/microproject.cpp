@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 #include<math.h>
-using namespace std;
+
 class conversion
 {
    int octal,hexadecimal,binary,decimal;

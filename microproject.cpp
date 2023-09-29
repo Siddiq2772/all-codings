@@ -1,6 +1,6 @@
 #include<iostream>
-#include<conio.h>
 #include<math.h>
+using namespace std;
 
 class formule
 { public:
@@ -28,10 +28,10 @@ int alltodec(int dec, int base)
 	     }
 	      }
 };
-void main()
+int main()
 {   formule a;
     int c1,c2,num;
-    clrscr();
+ 
      do{
     cout<<"\nenter type of number to be entered"<<endl;
     cout<<"menu:\n\t1.decimal\n\t2.binary\n\t3.octal\n\t4.hexadecimal\n\t5.exit"<<endl;
@@ -125,5 +125,6 @@ void main()
        }
        }while(c1!=5);
        cout<<"\nexited";
+	   return 0;
     getch ();
 }
